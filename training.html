@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение верховой езде | Конный клуб Аллюр</title>
+    <link rel="stylesheet" href="css/training.css">
+</head>
+<body>
+    <div class="page-container">
+        
+        <!-- ШАПКА (меню) -->
+        <header class="header">
+            <div class="container">
+                <nav class="menu">
+                    <a href="index.html">ГЛАВНАЯ</a>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main>
+            <div class="container">
+                <!-- Заголовок "Обучение верховой езде" с линиями -->
+                <div class="page__heading">
+                    <span class="page__line"></span>
+                    <h1 class="page__title">Обучение верховой езде</h1>
+                    <span class="page__line"></span>
+                </div>
+                
+                <!-- Описание клуба -->
+                <p class="club__description">
+                    Наш клуб предоставляет возможность обучаться верховой езды
+                </p>
+                
+                <!-- Заголовок "тренера клуба" -->
+                <div class="trainers__heading">
+                    <span class="trainers__line"></span>
+                    <h2 class="trainers__title">тренера клуба</h2>
+                    <span class="trainers__line"></span>
+                </div>
+                
+                <!-- Карточки тренеров -->
+                <div class="trainers__grid">
+                    <!-- Тренер 1: Татьяна Немченко -->
+                    <div class="trainer-card">
+                        <div class="trainer-card__image">
+                            <img src="img/trener1.jpg" alt="Татьяна Немченко">
+                        </div>
+                        <h3 class="trainer-card__name">Татьяна Немченко</h3>
+                        <p class="trainer-card__experience">стаж 12 лет</p>
+                    </div>
+                    
+                    <!-- Тренер 2: Алексей Волин -->
+                    <div class="trainer-card">
+                        <div class="trainer-card__image">
+                            <img src="img/trener3.jpg" alt="Алексей Волин">
+                        </div>
+                        <h3 class="trainer-card__name">Алексей Волин</h3>
+                        <p class="trainer-card__experience">стаж 10 лет</p>
+                    </div>
+                    
+                    <!-- Тренер 3: Юлия Волкова -->
+                    <div class="trainer-card">
+                        <div class="trainer-card__image">
+                            <img src="img/trener2.jpg" alt="Юлия Волкова">
+                        </div>
+                        <h3 class="trainer-card__name">Юлия Волкова</h3>
+                        <p class="trainer-card__experience">стаж 7 лет</p>
+                    </div>
+                </div>
+                
+                <!-- Дополнительный текст -->
+                <p class="trainers__text">
+                    В нашем клубе работают настоящие профессионалы с многолетним опытом. 
+                    Они помогут вам освоить технику безопасности, правильно чувствовать лошадь 
+                    и получать удовольствие от общения с этими удивительными животными.
+                </p>
+                
+            </div>
+        </main>
+        <!-- СТОИМОСТЬ УСЛУГ -->
+<section class="prices">
+    <div class="container">
+        <!-- Заголовок -->
+        <div class="prices__heading">
+            <span class="prices__line"></span>
+            <h2 class="prices__title">СТОИМОСТЬ УСЛУГ</h2>
+            <span class="prices__line"></span>
+        </div>
+        
+        <!-- Блоки с ценами (3 блока) -->
+        <div class="prices__grid">
+            <!-- Блок 1: Индивидуальные занятия -->
+            <div class="price-card">
+                <h3 class="price-card__title">Индивидуальные занятия</h3>
+                <div class="price-card__item">
+                    <span class="price-card__duration">2 часа</span>
+                    <span class="price-card__amount">65 бун</span>
+                </div>
+                <div class="price-card__item">
+                    <span class="price-card__duration">1 час</span>
+                    <span class="price-card__amount">40 бун</span>
+                </div>
+            </div>
+            
+            <!-- Блок 2: Групповые занятия -->
+            <div class="price-card">
+                <h3 class="price-card__title">Групповые занятия</h3>
+                <div class="price-card__item">
+                    <span class="price-card__duration">2 часа</span>
+                    <span class="price-card__amount">45 бун</span>
+                </div>
+                <div class="price-card__item">
+                    <span class="price-card__duration">1 час</span>
+                    <span class="price-card__amount">30 бун</span>
+                </div>
+            </div>
+            
+            <!-- Блок 3: Занятия с ребёнком -->
+            <div class="price-card">
+                <h3 class="price-card__title">Занятия с ребёнком на ограниченной площадке</h3>
+                <div class="price-card__item">
+                    <span class="price-card__duration">2 часа</span>
+                    <span class="price-card__amount">75 бун</span>
+                </div>
+                <div class="price-card__item">
+                    <span class="price-card__duration">1 час</span>
+                    <span class="price-card__amount">55 бун</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- АБОНЕМЕНТЫ -->
+<section class="subscriptions">
+    <div class="container">
+        <!-- Заголовок -->
+        <h2 class="subscriptions__title">Абонементы</h2>
+        
+        <!-- Большой блок с таблицей абонементов -->
+        <div class="subscriptions__table">
+            <!-- Заголовки колонок -->
+            <div class="subscriptions__header">
+                <div class="subscriptions__cell subscriptions__cell--empty"></div>
+                <div class="subscriptions__cell subscriptions__cell--header">индивидуальные</div>
+                <div class="subscriptions__cell subscriptions__cell--header">групповые</div>
+                <div class="subscriptions__cell subscriptions__cell--header">дети</div>
+            </div>
+            
+            <!-- Строка: 8 занятий -->
+            <div class="subscriptions__row">
+                <div class="subscriptions__cell subscriptions__cell--label">8 занятий</div>
+                <div class="subscriptions__cell">300 бун</div>
+                <div class="subscriptions__cell">220 бун</div>
+                <div class="subscriptions__cell">420 бун</div>
+            </div>
+            
+            <!-- Строка: 12 занятий -->
+            <div class="subscriptions__row">
+                <div class="subscriptions__cell subscriptions__cell--label">12 занятий</div>
+                <div class="subscriptions__cell">420 бун</div>
+                <div class="subscriptions__cell">320 бун</div>
+                <div class="subscriptions__cell">620 бун</div>
+            </div>
+            
+            <!-- Строка: безлимит -->
+            <div class="subscriptions__row">
+                <div class="subscriptions__cell subscriptions__cell--label">безлимит</div>
+                <div class="subscriptions__cell">600 бун</div>
+                <div class="subscriptions__cell">500 бун</div>
+                <div class="subscriptions__cell">780 бун</div>
+            </div>
+        </div>
+        
+        <!-- Дополнительный текст -->
+        <p class="subscriptions__text">
+            Наши тренировки проходят в комфортном ритме: вы познакомитесь с лошадью, освоите правильную посадку и начнёте уверенно двигаться. Каждое занятие строится с учётом вашего уровня — от первых шагов до отработки сложных элементов. Мы всегда рядом, подскажем и поддержим на каждом этапе.
+        </p>
+    </div>
+</section>
+    </div>
+</body>
+</html>

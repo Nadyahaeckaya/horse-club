@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF0E1;
+}
+
+/* ===== ПОДКЛЮЧЕНИЕ ШРИФТОВ ===== */
+@font-face {
+    font-family: 'Bad Script';
+    src: url('../fonts/BadScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('../fonts/Tinos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('../fonts/Tinos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ===== ОСНОВНЫЕ КОНТЕЙНЕРЫ ===== */
+.page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF0E1;
+}
+
+.container {
+    max-width: 1326px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    padding: 40px 0 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #184229;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+    opacity: 0.7;
+    border-bottom: 2px solid #184229;
+}
+
+/* ===== ЗАГОЛОВОК СТРАНИЦЫ ===== */
+.page__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 60px;
+    flex-wrap: wrap;
+}
+
+.page__title {
+    font-family: 'Bad Script', cursive;
+    font-size: 64px;
+    font-weight: normal;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.page__line {
+    width: 100px;
+    height: 2px;
+    background-color: #000000;
+}
+
+/* ===== КАРТОЧКИ ПРОГУЛОК ===== */
+.walk-card {
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.walk-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Контейнер с картинкой */
+.walk-card__image {
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.walk-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.walk-card:hover .walk-card__image img {
+    transform: scale(1.05);
+}
+
+/* Затемнение */
+.walk-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.walk-card:hover .walk-card__overlay {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* Контент поверх картинки */
+.walk-card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 600px;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+/* Название прогулки */
+.walk-card__title {
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Блок с деталями */
+.walk-card__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.walk-card__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.walk-card__label {
+    font-family: 'Tinos', serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ECCDAD;
+    letter-spacing: 0.5px;
+}
+
+.walk-card__value {
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Описание */
+.walk-card__description {
+    font-family: 'Tinos', serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ECCDAD;
+    line-height: 1.4;
+    margin-top: 12px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== БЛОК КОНТАКТОВ ===== */
+.contacts {
+    margin: 60px auto 40px;
+    max-width: 900px;
+    padding: 40px 30px;
+    background-color: #184229;
+    border-radius: 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contacts:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок с линиями */
+.contacts__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contacts__title {
+    font-family: 'Bad Script', cursive;
+    font-size: 36px;
+    font-weight: normal;
+    color: #ECCDAD;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.contacts__line {
+    width: 60px;
+    height: 2px;
+    background-color: #ECCDAD;
+}
+
+/* Подзаголовок */
+.contacts__subtitle {
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ECCDAD;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Сетка для двух блоков */
+.contacts__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+/* Каждый блок */
+.contacts__block {
+    text-align: center;
+}
+
+
+/* Заголовок блока */
+.contacts__block-title {
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+}
+
+/* Список контактов */
+.contacts__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts__item {
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ECCDAD;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Ссылки отдельно */
+.contacts__items a.contacts__item {
+    cursor: pointer;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .contacts {
+        max-width: 100%;
+        margin: 50px auto 40px;
+        padding: 35px 25px;
+    }
+    
+    .contacts__title {
+        font-size: 32px;
+    }
+    
+    .contacts__line {
+        width: 50px;
+    }
+    
+    .contacts__subtitle {
+        font-size: 16px;
+    }
+    
+    .contacts__block-title {
+        font-size: 22px;
+    }
+    
+    .contacts__item {
+        font-size: 16px;
+    }
+}
+
+/* Мобильные (до 768px) */
+@media (max-width: 768px) {
+    .contacts {
+        margin: 40px auto 30px;
+        padding: 25px 20px;
+    }
+    
+    .contacts__heading {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contacts__title {
+        font-size: 28px;
+    }
+    
+    .contacts__line {
+        width: 40px;
+    }
+    
+    .contacts__subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .contacts__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contacts__icon {
+        font-size: 36px;
+    }
+    
+    .contacts__block-title {
+        font-size: 20px;
+    }
+    
+    .contacts__item {
+        font-size: 15px;
+    }
+}
+
+/* Маленькие мобильные (до 480px) */
+@media (max-width: 480px) {
+    .contacts {
+        padding: 20px 15px;
+    }
+    
+    .contacts__title {
+        font-size: 24px;
+    }
+    
+    .contacts__line {
+        width: 30px;
+    }
+    
+    .contacts__subtitle {
+        font-size: 13px;
+    }
+    
+    .contacts__icon {
+        font-size: 32px;
+    }
+    
+    .contacts__block-title {
+        font-size: 18px;
+    }
+    
+    .contacts__item {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конный клуб Аллюр</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ОСНОВНОЙ КОНТЕЙНЕР ДЛЯ ВСЕЙ СТРАНИЦЫ -->
+    <!-- <div class="page-container"> -->
+        
+        <!-- БЛОК  (на всю ширину) -->
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Картинка -->
+                    <img src="img/header-adout.jpg" alt="Лошади" class="hero__image">
+                    
+                    <!-- Затемнение поверх картинки -->
+                    <div class="hero__overlay"></div>
+                    
+                    <!-- Меню (по центру сверху) -->
+                    <nav class="hero__menu menu">
+                        <a href="#home">ГЛАВНАЯ</a>
+                        <a href="#services">УСЛУГИ</a>
+                        <a href="#horses">ЛОШАДИ</a>
+                        <a href="#contacts">КОНТАКТЫ</a>
+                    </nav>
+                    
+                    <!-- Заголовки (по центру картинки) -->
+                    <div class="hero__titles">
+                        <h1 class="hero__title">КЛУБ ВЕРХОВОЙ ЕЗДЫ</h1>
+                        <div class="hero__subtitle">АЛЛЮР</div>
+                    </div>
+                </div>
+
+            
+                <div class="about">
+                    <div class="about__heading">
+                        <span class="about__line"></span>
+                        <h2 class="about__title">О нашем клубе</h2>
+                        <span class="about__line"></span>
+                    </div>
+                    <p class="about__text">
+                        Конный клуб «Аллюр» — гармония человека и лошади в живописном уголке области. 
+                        Уже 8 лет мы открываем мир верховой езды для детей и взрослых всего в 20 минутах от города.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- СЕКЦИЯ "УСЛУГИ" -->
+<section class="services" id="services">
+    <div class="container">
+        <!-- Заголовок с линиями -->
+        <div class="services__heading">
+            <span class="services__line"></span>
+            <h2 class="services__title">Услуги</h2>
+            <span class="services__line"></span>
+        </div>
+        
+        <!-- Сетка с карточками услуг -->
+        <div class="services__grid">
+            <!-- Карточка 1: обучение верховой езде -->
+            <a href="training.html" class="service-card">
+                <div class="service-card__image">
+                    <img src="img/obychenieYcl.jpg" alt="Обучение верховой езде">
+                    <div class="service-card__overlay"></div>
+                    <p class="service-card__title">обучение верховой езде</p>
+                </div>
+            </a>
+            
+            <!-- Карточка 2: конные прогулки -->
+            <a href="walks.html" class="service-card">
+                <div class="service-card__image">
+                    <img src="img/progylkaYcl.jpg" alt="Конные прогулки">
+                    <div class="service-card__overlay"></div>
+                    <p class="service-card__title">конные прогулки</p>
+                </div>
+                
+            </a>
+            
+            <!-- Карточка 3: фотосессия с лошадьми -->
+            <a href="photoshoot.html" class="service-card">
+                <div class="service-card__image">
+                    <img src="img/fotosesiaYcl.jpg" alt="Фотосессия с лошадьми">
+                    <div class="service-card__overlay"></div>
+                    <p class="service-card__title">фотосессия с лошадьми</p>
+                </div>
+                
+            </a>
+            
+            <!-- Карточка 4: проведение соревнований -->
+            <a href="competitions.html" class="service-card">
+                <div class="service-card__image">
+                    <img src="img/sorevnovaniaYcl.jpg" alt="Проведение соревнований">
+                    <div class="service-card__overlay"></div>
+                    <p class="service-card__title">проведение соревнований</p>
+                </div>  
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "НАШИ ЛОШАДИ" -->
+<section class="horses"  id="horses">
+    <div class="container">
+        <!-- Заголовок с линиями -->
+        <div class="horses__heading">
+            <span class="horses__line"></span>
+            <h2 class="horses__title">Наши лошади</h2>
+            <span class="horses__line"></span>
+        </div>
+        
+        <!-- Картинка с лошадьми -->
+        <div class="horses__image-wrapper">
+            <img src="img/ourHorses.jpg" alt="Наши лошади" class="horses__image">
+        </div>
+        
+        <!-- Кнопка -->
+        <div class="horses__button-wrapper">
+            <a href="horses.html" class="horses__button">
+                Нажмите, чтобы познакомиться<br>с нашими скакунами поближе
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- СЕКЦИЯ "ФОТОГАЛЕРЕЯ" -->
+<section class="gallery">
+    <div class="container">
+        <!-- Заголовок с линиями -->
+        <div class="gallery__heading">
+            <span class="gallery__line"></span>
+            <h2 class="gallery__title">фотогалерея нашего клуба</h2>
+            <span class="gallery__line"></span>
+        </div>
+        
+        <!-- Основной блок галереи -->
+        <div class="gallery__container">
+            <!-- Кнопка "назад" (треугольник влево) -->
+           <button class="gallery__nav">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</button>
+            
+            <!-- Прямоугольник с текущим фото -->
+            <div class="gallery__main">
+                <img src="img/photogal6.jpg" alt="Фото галереи" class="gallery__main-image" id="galleryMainImage">
+            </div>
+            
+            <!-- Кнопка "вперед" (треугольник вправо) -->
+            <button class="gallery__nav gallery__nav--next" aria-label="Следующее фото">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Миниатюры / индикаторы -->
+        <div class="gallery__thumbnails" id="galleryThumbnails">
+            <button class="gallery__thumbnail" data-index="0">
+                <img src="img/sorev.jpg" alt="Фото 1">
+            </button>
+            <button class="gallery__thumbnail" data-index="1">
+                <img src="img/progylkaRom.jpg" alt="Фото 2">
+            </button>
+            <button class="gallery__thumbnail" data-index="2">
+                <img src="img/photogal3.jpg" alt="Фото 3">
+            </button>
+            <button class="gallery__thumbnail" data-index="3">
+                <img src="img/photogal4.jpg" alt="Фото 4">
+            </button>
+            <button class="gallery__thumbnail" data-index="4">
+                <img src="img/photogal5.jpg" alt="Фото 5">
+            </button>
+        </div>
+    </div>
+</section>
+        
+    <!-- СЕКЦИЯ "ФУТЕР / КОНТАКТЫ" -->
+<footer class="footer" id="contacts">
+    <div class="container">
+        <!-- Заголовок (без линий) -->
+        <div class="footer__header">
+            <h2 class="footer__club-title">КЛУБ ВЕРХОВОЙ ЕЗДЫ</h2>
+            <div class="footer__club-subtitle">АЛЛЮР</div>
+        </div>
+        
+        <!-- Три колонки: Контакты | Логотип | Карта -->
+        <div class="footer__columns">
+            <!-- Блок с контактами -->
+            <div class="footer__contacts">
+                <div class="footer__contacts-card">
+                    <h3 class="footer__contacts-title">КОНТАКТЫ:</h3>
+                    <div class="footer__contacts-info">
+                        <p class="footer__address">
+                            <strong>АДРЕС:</strong>
+                            
+                        </p>
+                        <p class="footer__phone">
+                            <strong>ТЕЛЕФОН:</strong>
+                            
+                        </p>
+                        <p class="footer__email">
+                            <strong>EMAIL:</strong>
+                           
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Логотип по центру -->
+            <div class="footer__logo-center">
+                <div class="footer__logo-wrapper">
+                    <img src="img/logo.svg" alt="Логотип Аллюр" class="footer__logo-image">
+                </div>
+            </div>
+            
+            <!-- Блок с картой -->
+            <div class="footer__map">
+                <div class="footer__map-card">
+                    <h3 class="footer__map-title">КАРТА</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Нижнее меню (как в header) -->
+        <nav class="footer__menu">
+            <a href="#home">ГЛАВНАЯ</a>
+                        <a href="#services">УСЛУГИ</a>
+                        <a href="#horses">ЛОШАДИ</a>
+                        <a href="#contacts">КОНТАКТЫ</a>
+        </nav>
+    </div>
+</footer>
+<script src="js/gallery.js"></script>
+</body>
+</html>

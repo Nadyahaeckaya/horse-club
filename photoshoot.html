@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотосессия | Конный клуб Аллюр</title>
+    <link rel="stylesheet" href="css/photoshoot.css">
+</head>
+<body>
+    <div class="page-container">
+        
+        <!-- ШАПКА -->
+        <header class="header">
+            <div class="container">
+                <nav class="menu">
+                    <a href="index.html">ГЛАВНАЯ</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                
+                <!-- ЗАГОЛОВОК -->
+                <div class="page__heading">
+                    <span class="page__line"></span>
+                    <h1 class="page__title">Фотосессия</h1>
+                    <span class="page__line"></span>
+                </div>
+                
+                <!-- ТЕКСТ -->
+                <p class="page__text">
+                    На базе нашего клуба есть фотограф Мария,<br>
+                    которая сможет запечатлить памятные моменты
+                </p>
+                
+                <!-- КАРТОЧКИ УСЛУГ -->
+                <div class="services__grid">
+                    
+                    <!-- Карточка 1 -->
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/fotosetProgylka.jpg" alt="Фотосессия во время прогулки">
+                            <div class="service-card__overlay"></div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__line1">фотосессия</h3>
+                                <p class="service-card__line2">во время прогулки</p>
+                                <p class="service-card__price">цена 55 р</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 2 -->
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/fotosetPlan.jpg" alt="Индивидуальная фотосессия">
+                            <div class="service-card__overlay"></div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__line1">фотосессия</h3>
+                                <p class="service-card__line2">индивидуальная</p>
+                                <p class="service-card__price">цена 125 р</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 3 -->
+                    <div class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/fotosetPara.jpg" alt="Парная фотосессия">
+                            <div class="service-card__overlay"></div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__line1">парная фотосессия</h3>
+                                <p class="service-card__price">цена 185 р</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> <!-- закрываем services__grid -->
+                
+                <!-- ФОТОГАЛЕРЕЯ РАБОТ МАРИИ -->
+<div class="maria-gallery">
+    
+    <!-- ЗАГОЛОВОК -->
+    <div class="maria-gallery__header">
+        <h2 class="maria-gallery__title">Примеры работ Марии</h2>
+    </div>
+    
+    <!-- КОНТЕЙНЕР ГАЛЕРЕИ (фиксированные границы) -->
+    <div class="maria-gallery__container">
+        
+        <!-- КНОПКА НАЗАД -->
+        <button class="maria-gallery__nav maria-gallery__nav--prev" id="prevPhotoBtn">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="#ECCDAD" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        
+        <!-- ФОТО С СОХРАНЕНИЕМ ПРОПОРЦИЙ -->
+        <div class="maria-gallery__photo-wrapper">
+            <img src="fotoset1.jpg" alt="Работа Марии" class="maria-gallery__photo" id="galleryMainPhoto">
+        </div>
+        
+        <!-- КНОПКА ВПЕРЁД -->
+        <button class="maria-gallery__nav maria-gallery__nav--next" id="nextPhotoBtn">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18L15 12L9 6" stroke="#ECCDAD" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        
+    </div>
+    
+    <!-- СЧЁТЧИК ФОТО -->
+    <div class="maria-gallery__counter" id="photoCounter">1 / 5</div>
+    
+    <!-- ДОПОЛНИТЕЛЬНЫЙ ТЕКСТ -->
+    <div class="maria-gallery__footer">
+        <h3 class="maria-gallery__subtitle">Мария поможет вам...</h3>
+        <ul class="maria-gallery__list">
+            <li>подобрать образ</li>
+            <li>почувствовать себя уверенно перед камерой</li>
+            <li>расскажет как обращаться с лошадью</li>
+        </ul>
+    </div>
+    
+</div>
+                
+            </div>
+        </main>
+        
+        <!-- ПОДВАЛ -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__copy">© 2024 Конный клуб «Аллюр»</div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+<script src="js/photoshoot-gallery.js"></script>
+</html>

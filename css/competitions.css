@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF0E1;
+}
+
+/* ===== ШРИФТЫ ===== */
+@font-face {
+    font-family: 'Bad Script';
+    src: url('../fonts/BadScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('../fonts/Tinos-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('../fonts/Tinos-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/* ===== КОНТЕЙНЕРЫ ===== */
+.page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:  #FFF0E1 ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    padding: 32px 0 24px;
+    border-bottom: 1px solid rgba(24, 66, 41, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 48px;//растояние между элементами
+    flex-wrap: wrap;//если элементы не помещаются в строку,
+   они автоматически переносятся на следующую строку
+}
+
+.menu a {
+    color: #184229;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none; //убирает подчеркивание у ссылок
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #B87C4A;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+.menu a.active {
+    color: #B87C4A;
+}
+
+/* ===== ГЕРОЙ (ЗАГОЛОВОК) ===== */
+.hero {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.hero__lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.hero__line {
+    width: 80px;
+    height: 2px;
+    background-color:#184229 ;
+}
+
+.hero__title {
+    font-family: 'Bad Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    color: #184229;
+    letter-spacing: 2px;
+}
+
+.hero__subtitle {
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    color: #6B4E3A;
+    opacity: 0.8;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 20px 0 60px;
+}
+
+/* ВИДЕО КАРТОЧКА */
+.video-card {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.video-card__wrapper {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+
+.video-card__wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.video-card__badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(24, 66, 41, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ECCDAD;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+.video-card__badge span {
+    font-size: 18px;
+}
+
+.video-card__caption {
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    color: #6B4E3A;
+    font-style: italic;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.gallery__item {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.gallery__item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.25);
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery__item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(24, 66, 41, 0.4), rgba(184, 124, 74, 0.4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery__overlay span {
+    font-size: 32px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.gallery__item:hover .gallery__overlay {
+    opacity: 1;
+}
+
+.gallery__item:hover .gallery__overlay span {
+    transform: scale(1);
+}
+
+/* ИНФО БЛОК */
+.info {
+    background: #184229;
+    border-radius: 40px;
+    padding: 48px 56px;
+    text-align: center;
+    box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-5px);
+}
+
+.info__icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.info__title {
+    font-family: 'Bad Script', cursive;
+    font-size: 36px;
+    color: #ECCDAD;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.info__text {
+    font-family: 'Tinos', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ECCDAD;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    opacity: 0.9;
+}
+
+.info__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #ECCDAD;
+    color: #184229;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 36px;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info__btn span {
+    font-size: 20px;
+}
+
+.info__btn:hover {
+    background: #d4b88c;
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ПОДВАЛ */
+.footer {
+    border-top: 1px solid rgba(24, 66, 41, 0.1);
+    padding: 32px 0;
+    margin-top: 40px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer__logo {
+    font-family: 'Bad Script', cursive;
+    font-size: 24px;
+    color: #184229;
+}
+
+.footer__copy {
+    font-family: 'Tinos', serif;
+    font-size: 14px;
+    color: #6B4E3A;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+
+@media (max-width: 1024px) {
+    .hero__title {
+        font-size: 44px;
+    }
+    
+    .hero__line {
+        width: 60px;
+    }
+    
+    .gallery {
+        gap: 18px;
+    }
+    
+    .info {
+        padding: 40px 32px;
+    }
+    
+    .info__title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 24px 0 16px;
+    }
+    
+    .menu {
+        gap: 28px;
+    }
+    
+    .menu a {
+        font-size: 15px;
+    }
+    
+    .hero {
+        padding: 40px 0 30px;
+    }
+    
+    .hero__title {
+        font-size: 32px;
+    }
+    
+    .hero__subtitle {
+        font-size: 16px;
+    }
+    
+    .hero__line {
+        width: 40px;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .info {
+        padding: 32px 24px;
+    }
+    
+    .info__title {
+        font-size: 28px;
+    }
+    
+    .info__text {
+        font-size: 16px;
+    }
+    
+    .info__btn {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+    
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        gap: 20px;
+    }
+    
+    .menu a {
+        font-size: 13px;
+    }
+    
+    .hero__title {
+        font-size: 26px;
+    }
+    
+    .hero__line {
+        width: 30px;
+    }
+    
+    .video-card__badge {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    .gallery {
+        gap: 12px;
+    }
+    
+    .info {
+        padding: 28px 20px;
+    }
+    
+    .info__title {
+        font-size: 24px;
+    }
+    
+    .info__text {
+        font-size: 14px;
+    }
+    
+    .info__btn {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+}
