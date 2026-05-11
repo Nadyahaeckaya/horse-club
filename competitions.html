@@ -83,9 +83,7 @@
                             Для организации мероприятия свяжитесь с нами — наш администратор 
                             расскажет про все особенности и ответит на ваши вопросы.
                         </p>
-                        <a href="tel:+375291234567" class="info__btn">
-                             Связаться с нами
-                        </a>
+                        <button class="info__btn" id="openModalBtn">Связаться с нами</button>
                     </div>
                     
                 </div>
@@ -100,8 +98,19 @@
                     <div class="footer__copy">© 2026 Конный клуб «Аллюр»</div>
                 </div>
             </div>
-        </footer>
-        
+        </footer>  
     </div>
+    <!-- модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h3 class="modal__title">Свяжитесь с нами</h3>
+            <p class="modal__text">Наш администратор ответит на все ваши вопросы</p>
+            <a href="tel:+375291234567" class="modal__phone">+375 (29) 123-45-67</a>
+            <p class="modal__small">Пн-Пт: 11:00 - 20:00</p>
+        </div>
+    </div>
+    
+    <script src="js/modal.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ const thumbnails = document.querySelectorAll(".gallery__thumbnail"); // все �
 // 3. ФУНКЦИЯ ОБНОВЛЕНИЯ ГАЛЕРЕИ (показывает текущее фото)
 function updateGallery() {
     // Меняем большое фото
-    mainImage.src = photos[currentIndex];
+    mainImage.src = photos[currentIndex];// photos[currentIndex] - берём путь к картинке из массива
     mainImage.alt = "Фото галереи " + (currentIndex + 1);
     
     // Подсвечиваем активную миниатюру

@@ -175,7 +175,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Цена (теперь тоже белая) */
+/* Цена  */
 .service-card__price {
     font-family: 'Tinos', serif;
     font-size: 36px;
@@ -307,35 +307,6 @@ body {
     margin: 0;
 }
 
-/* Зелёные блоки (будущая карусель) */
-.gallery__carousel {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.green-block {
-    background-color: #184229;
-    border-radius: 24px;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.green-block span {
-    font-family: 'Tinos', serif;
-    font-size: 24px;
-    font-weight: normal;
-    color: #FFFFFF;
-    padding: 20px;
-}
-
 /* Кнопки переключения */
 .gallery__buttons {
     display: flex;
@@ -361,7 +332,7 @@ body {
     background-color: #2a5a3a;
 }
 
-/* ДОПОЛНИТЕЛЬНЫЙ ТЕКСТ (теперь слева, на всю ширину) */
+/* ДОПОЛНИТЕЛЬНЫЙ ТЕКСТ  */
 .gallery-section__footer {
     text-align: left;
     max-width: 100%;
@@ -371,7 +342,7 @@ body {
 
 .gallery-section__subtitle {
     font-family: 'Tinos', serif;
-    font-size: 36px;  /* уменьшен с 48px */
+    font-size: 36px;  
     font-weight: normal;
     color: #000000;
     margin-bottom: 25px;
@@ -384,7 +355,7 @@ body {
 
 .gallery-section__list li {
     font-family: 'Tinos', serif;
-    font-size: 32px;  /* уменьшен с 48px */
+    font-size: 32px;  
     font-weight: normal;
     color: #000000;
     margin-bottom: 15px;
@@ -413,15 +384,6 @@ body {
     .gallery-section__list li {
         font-size: 24px;
     }
-    
-    .green-block {
-        width: 160px;
-        height: 160px;
-    }
-    
-    .green-block span {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -440,15 +402,6 @@ body {
     
     .gallery-section__list li::before {
         font-size: 24px;
-    }
-    
-    .green-block {
-        width: 130px;
-        height: 130px;
-    }
-    
-    .green-block span {
-        font-size: 14px;
     }
     
     .gallery__btn {
@@ -474,22 +427,13 @@ body {
         gap: 15px;
     }
     
-    .green-block {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .green-block span {
-        font-size: 12px;
-        padding: 10px;
-    }
-    
+  
     .gallery__btn {
         font-size: 16px;
         padding: 6px 20px;
     }
 }
-/* ===== ФОТОГАЛЕРЕЯ МАРИИ (новая) ===== */
+/* ===== ФОТОГАЛЕРЕЯ МАРИИ  ===== */
 .maria-gallery {
     margin: 60px 0 80px;
 }
@@ -534,7 +478,7 @@ body {
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
-/* Само фото (сохраняет пропорции) */
+/* Само фото  */
 .maria-gallery__photo {
     width: 100%;
     height: auto;

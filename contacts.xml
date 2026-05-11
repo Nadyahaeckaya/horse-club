@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+    <item>
+        <type>Телефон</type>
+        <value>+375 (29) 123-45-67</value>
+    </item>
+    <item>
+        <type>Email</type>
+        <value>allurclab@gmail.com</value>
+    </item>
+    <item>
+        <type>Instagram</type>
+        <value>@allur_horse_club</value>
+    </item>
+</contacts>

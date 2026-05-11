@@ -9,33 +9,27 @@
 <body>
     <!-- ОСНОВНОЙ КОНТЕЙНЕР ДЛЯ ВСЕЙ СТРАНИЦЫ -->
     <!-- <div class="page-container"> -->
-        
         <!-- БЛОК  (на всю ширину) -->
         <div class="hero" id="home">
             <div class="container">
                 <div class="hero__inner">
                     <!-- Картинка -->
                     <img src="img/header-adout.jpg" alt="Лошади" class="hero__image">
-                    
                     <!-- Затемнение поверх картинки -->
                     <div class="hero__overlay"></div>
-                    
-                    <!-- Меню (по центру сверху) -->
+                    <!-- Меню  -->
                     <nav class="hero__menu menu">
                         <a href="#home">ГЛАВНАЯ</a>
                         <a href="#services">УСЛУГИ</a>
                         <a href="#horses">ЛОШАДИ</a>
                         <a href="#contacts">КОНТАКТЫ</a>
                     </nav>
-                    
                     <!-- Заголовки (по центру картинки) -->
                     <div class="hero__titles">
                         <h1 class="hero__title">КЛУБ ВЕРХОВОЙ ЕЗДЫ</h1>
                         <div class="hero__subtitle">АЛЛЮР</div>
                     </div>
                 </div>
-
-            
                 <div class="about">
                     <div class="about__heading">
                         <span class="about__line"></span>
@@ -48,8 +42,7 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
+        </div>      
         <!-- СЕКЦИЯ "УСЛУГИ" -->
 <section class="services" id="services">
     <div class="container">
@@ -59,7 +52,6 @@
             <h2 class="services__title">Услуги</h2>
             <span class="services__line"></span>
         </div>
-        
         <!-- Сетка с карточками услуг -->
         <div class="services__grid">
             <!-- Карточка 1: обучение верховой езде -->
@@ -189,24 +181,18 @@
             <div class="footer__club-subtitle">АЛЛЮР</div>
         </div>
         
-        <!-- Три колонки: Контакты | Логотип | Карта -->
-        <div class="footer__columns">
+        <!-- ДВЕ КОЛОНКИ: Контакты | Логотип  -->
+        <div class="footer__columns footer__columns--two">
             <!-- Блок с контактами -->
             <div class="footer__contacts">
                 <div class="footer__contacts-card">
                     <h3 class="footer__contacts-title">КОНТАКТЫ:</h3>
                     <div class="footer__contacts-info">
-                        <p class="footer__address">
-                            <strong>АДРЕС:</strong>
-                            
-                        </p>
                         <p class="footer__phone">
-                            <strong>ТЕЛЕФОН:</strong>
-                            
+                            <strong>ТЕЛЕФОН:</strong> +375 (29) 123-45-67
                         </p>
                         <p class="footer__email">
-                            <strong>EMAIL:</strong>
-                           
+                            <strong>EMAIL:</strong> allurclab@gmail.com
                         </p>
                     </div>
                 </div>
@@ -218,21 +204,19 @@
                     <img src="img/logo.svg" alt="Логотип Аллюр" class="footer__logo-image">
                 </div>
             </div>
-            
-            <!-- Блок с картой -->
-            <div class="footer__map">
-                <div class="footer__map-card">
-                    <h3 class="footer__map-title">КАРТА</h3>
-                </div>
-            </div>
+        </div>
+        
+        <!-- ===== ССЫЛКА НА XML-ФАЙЛ ===== -->
+       <div style="display: none;">
+            <a href="contacts.xml" id="hiddenXmlLink">XML</a>
         </div>
         
         <!-- Нижнее меню (как в header) -->
         <nav class="footer__menu">
             <a href="#home">ГЛАВНАЯ</a>
-                        <a href="#services">УСЛУГИ</a>
-                        <a href="#horses">ЛОШАДИ</a>
-                        <a href="#contacts">КОНТАКТЫ</a>
+            <a href="#services">УСЛУГИ</a>
+            <a href="#horses">ЛОШАДИ</a>
+            <a href="#contacts">КОНТАКТЫ</a>
         </nav>
     </div>
 </footer>

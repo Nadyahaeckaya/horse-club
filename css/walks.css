@@ -112,9 +112,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.walk-card:hover {
-    transform: translateY(-5px);
-}
+
 
 /* Контейнер с картинкой */
 .walk-card__image {
@@ -133,9 +131,6 @@ body {
     transition: transform 0.4s ease;
 }
 
-.walk-card:hover .walk-card__image img {
-    transform: scale(1.05);
-}
 
 /* Затемнение */
 .walk-card__overlay {
@@ -149,9 +144,7 @@ body {
     transition: background 0.3s ease;
 }
 
-.walk-card:hover .walk-card__overlay {
-    background: rgba(0, 0, 0, 0.65);
-}
+
 
 /* Контент поверх картинки */
 .walk-card__content {
